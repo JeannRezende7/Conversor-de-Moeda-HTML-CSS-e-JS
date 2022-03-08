@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    valorConvertidoBTC
+    <div class="container">
+        <h1 class="page-title">
+            Conversor de moedas
+        </h1>
+        <p class="page-subtitle">
+            Descubra os valores em dolar USD,real BRL, e bitcoin BTC
+        </p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+        <label for="moeda">Conversor USD (Dólar) para BRL (Real)</label><br>
+        <input type="number" id="valor" size="2" /><br>
+        <button type="submit" onclick="ConverterToBrl()">Converter</button>
+        <!-- No Evento onclick eu coloco o mesmo nome da função que vou usar depois no JS. -->
+        <h2 id="valorConvertidoUSD"></h2>
+
+        <label for="moeda">Conversor BRL (Real) para USD (Dólar) </label><br>
+        <input type="number" id="valor2" size="2" /><br>
+        <button type="submit" onclick="ConverterToUsd()">Converter</button>
+        <h3 id="valorConvertidoBRL"></h3>
+
+        <label for="moeda">Conversor BRL (Real) para BTC (Bitcoin) </label><br>
+        <input type="number" id="valor3" size="2" /><br>
+        <button type="submit" onclick="ConverterToBtc()">Converter</button>
+        <h4 id="valorConvertidoBTC"></h4>
+
+        <label for="moeda">Conversor BTC (Bitcoin) para BRL (Real) </label><br>
+        <input type="number" id="valor4" size="2" /><br>
+        <button type="submit" onclick="ConverterBtcToBrl()">Converter</button>
+        <h5 id="valorConvertidoBtcToBrl"></h5>
+
+        <h6 id="Data">Valores com referencia no dia 08/03/2022</h6>
+
+    </div>
+    <!-- partial -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
